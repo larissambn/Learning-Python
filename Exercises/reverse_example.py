@@ -1,5 +1,4 @@
 # Print reversed name
-
 name = input ("First and last name to reverse")
 
 words = name.split(" ")
