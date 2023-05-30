@@ -14,7 +14,6 @@ print(list(numberedContestants))
 for i in range(10):
     print("hello")
 
-
 # interate through a list
 for c in list(numberedContestants):
     print("Contestant " + str(c) + " is here")
