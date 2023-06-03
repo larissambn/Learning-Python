@@ -8,15 +8,15 @@ free_capacity = True
 
 members = int(input("How old are you?"))
 
-for not_allowed in members:
+for not_allowed in members: # loop does not iterate trough an integer (members). It should be an if statement instead.
     print("You are not allowed")
 
-for adult in members: 
-    'Here is your ticket, enjoy the ride' if free_capacity else 'You need to wait' 
+for adult in members: # same error as above, so it should be an if statement.
+    'Here is your ticket, enjoy the ride' if free_capacity else 'You need to wait' # string with no action associated with it. So it should be replaced with a print statement to display the apropriate message.
 
 for teen in members: 
     document = bool(input("Do you have the IdCard?"))
-    idCard = True
+    idCard = True # incorrect logic. Insted of True to ID card it should be a variable called "document"
     auth = 'You can come in' if idCard else 'You need the IdCard',document
     print(auth)
 
