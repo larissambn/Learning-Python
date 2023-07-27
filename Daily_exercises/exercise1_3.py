@@ -5,14 +5,14 @@
 for number in range(2000,3200):
     if number % 7 == 0 and number % 5 != 0 :
         print(number, end=",")
-
+    
 # 2
 # Write a program which can compute the factorial of a given numbers.
 # The results should be printed in a comma-separated sequence on a single line.
 # Suppose the following input is supplied to the program: 8 Then, the output should be:40320 (1 * 2 * 3 * 4 * 5 * 6 * 7 * 8)
 
 try:
-    user_input = input("Enter a number: ")
+    user_input = input("Enter a number:  ")
     number = int(user_input)
 
     if number < 0:
@@ -33,7 +33,7 @@ except ValueError:
 # Then the program should print the dictionary.Suppose the following input is supplied to the program: 8
 # {1: 1, 2: 4, 3: 9, 4: 16, 5: 25, 6: 36, 7: 49, 8: 64}
 
-user_input = int(input("Enter a number"))
+user_input = int(input("Enter a number: "))
 
 dictionary = { } # initialize it empty to store key-value pares.
 
