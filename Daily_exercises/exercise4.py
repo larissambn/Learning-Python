@@ -56,6 +56,47 @@ def testStringManipulator():
 # Test the class methods
 testStringManipulator()
 
-# 5
+# 6´
+# Write a program that calculates and prints the value according to the given formula:
 
+#Q = Square root of [(2 _ C _ D)/H]
 
+#Following are the fixed values of C and H:
+
+#C is 50. H is 30.
+
+#D is the variable whose values should be input to your program in a comma-separated sequence.For example Let us assume the following comma separated input sequence is given to the program:
+
+#100,150,180
+#The output of the program should be:
+
+#18,22,24
+
+import math
+
+# Fixed values of C and H
+C = 50
+H = 30
+
+def calculate_Q(D):
+    return int(round(math.sqrt((2 * C * D) / H)))
+
+def main():
+    input_sequence = input("Enter the comma-separated values of D: ")
+    D_values = input_sequence.split(',')
+
+    result = [calculate_Q(int(D)) for D in D_values]
+
+    print(','.join(map(str, result)))
+
+if __name__ == "__main__":
+    main()
+
+#Explanation:
+
+"""The program takes the comma-separated input sequence from the user as a string.
+It splits the input sequence into a list of individual values using the split() method.
+For each value in the D_values list, it calculates the corresponding Q using the given formula.
+The calculated Q values are rounded to the nearest integer using int(round()).
+The final rounded Q values are then printed in a comma-separated sequence using ','.join(map(str, result)).
+This program will produce the correct output based on the given formula and fixed values of C and H."""
