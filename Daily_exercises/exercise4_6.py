@@ -16,7 +16,7 @@ print("Tuple:", number_tuple)
 
 # other solution (without coma):
 
-lst = input("Enter a sequence of numbers").split(',')  # the input is being taken as string and as it is string it has a built in
+lst = input("Enter a sequence of numbers: ").split(',')  # the input is being taken as string and as it is string it has a built in
                           # method name split. ',' inside split function does split where it finds any ','
                           # and save the input as list in lst variable
 
@@ -82,7 +82,7 @@ def calculate_Q(D):
     return int(round(math.sqrt((2 * C * D) / H)))
 
 def main():
-    input_sequence = input("Enter the comma-separated values of D: ")
+    input_sequence = input("Enter 3 comma-separated values : ")
     D_values = input_sequence.split(',')
 
     result = [calculate_Q(int(D)) for D in D_values]
@@ -100,3 +100,34 @@ For each value in the D_values list, it calculates the corresponding Q using the
 The calculated Q values are rounded to the nearest integer using int(round()).
 The final rounded Q values are then printed in a comma-separated sequence using ','.join(map(str, result)).
 This program will produce the correct output based on the given formula and fixed values of C and H."""
+
+
+# 7
+# _Write a program which takes 2 digits, X,Y as input and generates a 2-dimensional array. 
+# The element value in the i-th row and j-th column of the array should be i _ j.*
+
+first_array = []
+second_array = []
+
+try:  
+    user_input = input("Enter 2 digits separated by coma ")
+    int(user_input) 
+
+    user_input[0] = lst
+    user_input[1] = number_list 
+
+    # sequence 0 to infinite inside of a list.
+    number_list = range
+
+    # Using list comprehension to create a list of empty lists
+    lists_container = [[] for _ in range(lst)]
+        
+    for i in lists_container:
+        range * (i + 1)
+    print(lists_container)
+
+except ValueError:
+    print("Invalid input. Please enter a valid integer.")
+
+# separar os valores em : primeiro valor é número de listas, segundo valor é quantidade de números de 1 a 0 dentro das listas.
+# Loop. 
