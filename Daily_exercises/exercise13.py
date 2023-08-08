@@ -40,3 +40,34 @@ for j in user:
 print("DIGITS:", count_digits)
 print("LETTERS:", letters_count)
     
+
+# Better version of my code: 
+
+user = input("Enter a sequence of letters and digits: ").split()  # No need to specify the separator
+
+number_counting = [int(i) for i in user if i.isdigit()]  # Using list comprehension
+
+s_again = list(map(str, number_counting))
+
+count_digits = sum(len(st) for st in s_again)  # Using generator expression and sum()
+
+letters_count = sum(len(j) for j in user)
+
+print("DIGITS:", count_digits)
+print("LETTERS:", letters_count)
+
+# Simplier solution : 
+
+sentence = input("Enter a sentence: ")
+
+letters_count = 0
+digits_count = 0
+
+for char in sentence:
+    if char.isalpha():
+        letters_count += 1
+    elif char.isdigit():
+        digits_count += 1
+
+print("LETTERS", letters_count)
+print("DIGITS", digits_count)
