@@ -31,3 +31,9 @@ number_list = [int(i) for i in sum] # turn the strings into integer
 total_sum = number_list[0] + number_list[1] + number_list[2] + number_list[3] # sum them all
 
 print(total_sum)
+
+# other solutions 
+
+a = input()
+total = int(a) + int(2*a) + int(3*a) + int(4*a)  # N*a=Na, for example  a="23", 2*a="2323",3*a="232323"
+print(total)

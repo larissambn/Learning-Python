@@ -1,3 +1,22 @@
+numbers = input("Enter a sequence of numbers: ")
+
+# Convert the input to a list of integers
+numbers_list = [int(num) for num in numbers.split()]
+
+for number in numbers_list:
+    if number % 2 != 0:
+        number  = number * number
+        print(number, end = ", ")
+    else:
+        pass
+
+# or
+
+squared_odd_numbers = [str(number * number) for number in numbers_list if number % 2 != 0]
+
+# Print the result as a comma-separated string
+print(','.join(squared_odd_numbers))
+
 # 17
 
 withdraw = [] 
